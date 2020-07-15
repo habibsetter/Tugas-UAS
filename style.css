@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+header {
+    background: url('asset/background-overlay.jpg') no-repeat;
+    background-color: #c2c2a3;
+    background-blend-mode: multiply;
+    opacity: .8;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+
+header .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .wrapper h1 {
+    color: #99ffbb;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-shadow: 0 4px 0px black;
+    margin-bottom: 40px;
+}
+
+header .wrapper img {
+    border-radius: 50%;
+    border: 7px solid #999966;
+    box-shadow: 0 28px 26px 1px rgba(0,0,0,.7);
+    width: 45%;
+}
+
+header .wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header .wrapper ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #99ffbb;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-shadow: 0 4px 0px black;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+header .wrapper ul li a:hover{
+    border-bottom: 5px solid #00b33c;
+}
+
+.about-me {
+    background: #c2c2a3;
+    color : white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.about-me .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid black;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.about-me .wrapper p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 35px;
+}
+
+.skill  {
+    background: #a3a375;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill .wrapper {
+    width: 80%;
+}
+
+.skill .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid black;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.skill .wrapper-skill {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skill .wrapper-skill h5 {
+    text-transform: uppercase;
+    text-shadow: 0 4px 0px black;
+    font-size: 18px;
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+.skill .wrapper-skill .background {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white;
+}
+
+.skill .wrapper-skill .background .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: #649cfc;
+}
+
+.indicator.html {
+    width: 50%;
+}
+
+.indicator.css {
+    width: 40%;
+}
+
+.indicator.english {
+    width: 80%;
+}
+
+.karya {
+    background: #c2c2a3;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.karya .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid black;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.karya .wrapper .wrapper-karya {
+    display: grid;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper-karya a {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    text-shadow: 0 4px 0px black;
+    font-size: 18px;
+}
+
+.kontak {
+    background: #999966;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontak .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid black;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.kontak .wrapper-kontak input, .kontak .wrapper-kontak textarea {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 11px;
+    padding: 10px 15px;
+    margin-bottom: 18px;
+}
+
+.kontak .wrapper-kontak textarea {
+    height: 120px;
+}
+
+.kontak .wrapper-kontak input[type="submit"] {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 11px;
+    padding: 10px 60px;
+    border: 5px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #a3a375;
+    display: inline-block;
+    padding-bottom: 23px;
+    width: auto;
+    cursor: pointer;
+}
+
+.kontak .wrapper-kontak input[type="submit"]:hover {
+    background: #999966;
+    box-shadow: 0 5px 25px -5px rgba(0,0,0,.7);
+}
